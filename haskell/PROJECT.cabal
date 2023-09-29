@@ -1,0 +1,21 @@
+cabal-version:  2.4
+name:           PROJECT
+version:        0.0.0.1
+copyright:      2023 AUTHOR
+maintainer:     EMAIL@EXAMPLE.COM
+author:         AUTHOR
+
+common shared
+  ghc-options:
+    -Wall
+  
+  build-depends:
+    base  >=4.13.0.0 && <4.18.0.0.0
+  
+  hs-source-dirs:   src
+  default-language: Haskell2010
+
+executable PROJECT
+  import:         shared
+  main-is:        Main.hs
+  -- other-modules:
